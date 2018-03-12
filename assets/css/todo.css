@@ -16,16 +16,16 @@ ul {
 
 body {
   font-family: Roboto;
-  background: #00f260; /* fallback for old browsers */
+  background: #2bc0e4; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
-    #0575e6,
-    #00f260
+    to left,
+    #eaecc6,
+    #2bc0e4
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
-    #0575e6,
-    #00f260
+    to left,
+    #eaecc6,
+    #2bc0e4
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -37,13 +37,13 @@ li {
 }
 
 li:nth-child(2n) {
-  background: #f7f7f7;
+  background: #f1ebeb;
 }
 
 input {
   font-size: 18px;
   color: #2980b9;
-  background-color: #f7f7f7;
+  background-color: #f1ebeb;
   width: 100%;
   padding: 13px 13px 13px 20px;
   box-sizing: border-box;
@@ -60,7 +60,7 @@ input:focus {
 .container {
   width: 360px;
   margin: 100px auto;
-  background: #f7f7f7;
+  background: #f1ebeb;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
