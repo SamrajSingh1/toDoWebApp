@@ -21,6 +21,7 @@
   "homepage": "https://github.com/kpruehss/toDoWebApp#readme",
   "devDependencies": {
     "eslint": "^4.18.2",
-    "eslint-config-google": "^0.9.1"
+    "eslint-config-google": "^0.9.1",
+    "jquery": "^3.3.1"
   }
 }
