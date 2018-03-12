@@ -25,7 +25,14 @@ $("input[type='text']").keypress(function(event) {
     // Grab todo text from input
     let todoText = $(this).val();
     // Create a new li and add to ul
-    $('ul').append('<li><span>X</span> ' + todoText + '</li>');
+    $('ul').append(
+      '<li><span><i class="fas fa-trash-alt"></i></span> ' + todoText + '</li>'
+    );
     $(this).val('');
   }
+});
+
+// Fade the text input through the + sign in h1
+$('#plusSign').click(function() {
+  $('input[type="text"]').fadeToggle();
 });

@@ -1,3 +1,18 @@
+body {
+  font-family: Roboto;
+  background: #2bc0e4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #eaecc6,
+    #2bc0e4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #eaecc6,
+    #2bc0e4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 h1 {
   background: #2980b9;
   color: white;
@@ -14,21 +29,6 @@ ul {
   padding: 0;
 }
 
-body {
-  font-family: Roboto;
-  background: #2bc0e4; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #eaecc6,
-    #2bc0e4
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #eaecc6,
-    #2bc0e4
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 li {
   background: #fff;
   height: 40px;
@@ -40,6 +40,23 @@ li:nth-child(2n) {
   background: #f1ebeb;
 }
 
+li span {
+  background: #e74c3c;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1;
+}
+
 input {
   font-size: 18px;
   color: #2980b9;
@@ -47,6 +64,8 @@ input {
   width: 100%;
   padding: 13px 13px 13px 20px;
   box-sizing: border-box;
+  /* Remove the little gap between the sides of the input and li using an invisible border */
+  border: 3px solid rgba(0, 0, 0, 0);
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
@@ -67,4 +86,8 @@ input:focus {
 .completed {
   color: grey;
   text-decoration: line-through;
+}
+
+.fa-plus {
+  float: right;
 }
