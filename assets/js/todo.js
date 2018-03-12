@@ -1,4 +1,4 @@
 // Check off specific Todos by clicking
-$("li").on("click", function() {
-  $(this).toggleClass("done");
+$('li').on('click', function() {
+  $(this).toggleClass('completed');
 });
